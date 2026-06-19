@@ -1,0 +1,16 @@
+[runtime]
+default_mode = "Fast mode"
+skip_garch_rows = 6000
+max_rolling_garch_forecasts = 250
+
+[models]
+ewma_lambda = 0.94
+daily_realized_window = 21
+garch_train_window = 756
+har_train_window = 252
+hybrid_train_window = 252
+
+[risk]
+target_annual_volatility = 0.15
+max_leverage = 2.0
+var_z_score = 2.33
