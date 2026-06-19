@@ -1,0 +1,161 @@
+
+    <html><head><title>Volatility Lab Report</title></head><body>
+    <h1>Volatility Forecasting Lab Report</h1>
+    <p><strong>Generated:</strong> 2026-06-11T15:13:33</p>
+    <p><strong>Realized volatility target:</strong> 21-day rolling daily returns</p>
+    <p><strong>Best model by QLIKE:</strong> HAR_RV_h1</p>
+    <h2>Dataset Summary</h2>
+    <table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>field</th>
+      <th>value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>end</td>
+      <td>2026-06-09</td>
+    </tr>
+    <tr>
+      <td>price_rows</td>
+      <td>4133</td>
+    </tr>
+    <tr>
+      <td>return_rows</td>
+      <td>4132</td>
+    </tr>
+    <tr>
+      <td>source</td>
+      <td>Yahoo Finance</td>
+    </tr>
+    <tr>
+      <td>start</td>
+      <td>2010-01-04</td>
+    </tr>
+  </tbody>
+</table>
+    <h2>Model Settings</h2>
+    <table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>setting</th>
+      <th>value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>data_provider</td>
+      <td>Yahoo Finance</td>
+    </tr>
+    <tr>
+      <td>ewma_lambda</td>
+      <td>0.94</td>
+    </tr>
+    <tr>
+      <td>garch_variants</td>
+      <td>GARCH, EGARCH, GJR</td>
+    </tr>
+    <tr>
+      <td>har_horizon</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>har_train_window</td>
+      <td>252</td>
+    </tr>
+    <tr>
+      <td>horizon</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>hybrid_window</td>
+      <td>252</td>
+    </tr>
+    <tr>
+      <td>max_forecasts</td>
+      <td>250</td>
+    </tr>
+    <tr>
+      <td>max_leverage</td>
+      <td>2.0</td>
+    </tr>
+    <tr>
+      <td>mode</td>
+      <td>Fast mode</td>
+    </tr>
+    <tr>
+      <td>rv_source</td>
+      <td>21-day rolling daily returns</td>
+    </tr>
+    <tr>
+      <td>target_vol</td>
+      <td>0.15</td>
+    </tr>
+    <tr>
+      <td>ticker</td>
+      <td>SPY</td>
+    </tr>
+    <tr>
+      <td>train_window</td>
+      <td>504</td>
+    </tr>
+  </tbody>
+</table>
+    <h2>Metrics</h2>
+    <table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>model</th>
+      <th>MAE(vol)</th>
+      <th>RMSE(vol)</th>
+      <th>MSE(var)</th>
+      <th>QLIKE(var)</th>
+      <th>n</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>HAR_RV_h1</td>
+      <td>0.005789</td>
+      <td>0.009209</td>
+      <td>1.117929e-10</td>
+      <td>-8.555963</td>
+      <td>63</td>
+    </tr>
+    <tr>
+      <td>EWMA(0.94)</td>
+      <td>0.015946</td>
+      <td>0.019019</td>
+      <td>4.096323e-10</td>
+      <td>-8.525549</td>
+      <td>63</td>
+    </tr>
+    <tr>
+      <td>GARCH11_h1</td>
+      <td>0.019452</td>
+      <td>0.023667</td>
+      <td>9.032703e-10</td>
+      <td>-8.518353</td>
+      <td>63</td>
+    </tr>
+    <tr>
+      <td>EGARCH11_h1</td>
+      <td>0.022314</td>
+      <td>0.026273</td>
+      <td>9.857124e-10</td>
+      <td>-8.504159</td>
+      <td>63</td>
+    </tr>
+    <tr>
+      <td>GJR11_h1</td>
+      <td>0.040968</td>
+      <td>0.050620</td>
+      <td>4.168667e-09</td>
+      <td>-8.297052</td>
+      <td>63</td>
+    </tr>
+  </tbody>
+</table>
+    </body></html>
+    

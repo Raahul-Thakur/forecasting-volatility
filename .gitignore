@@ -17,8 +17,4 @@ Thumbs.db
 .ruff_cache/
 .coverage
 htmlcov/
-outputs/
-
-vol_lab_metrics.csv
-vol_lab_forecasts.csv
-vol_lab_report.html
+yfinance_cache

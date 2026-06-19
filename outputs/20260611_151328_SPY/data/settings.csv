@@ -1,0 +1,15 @@
+setting,value
+data_provider,Yahoo Finance
+ewma_lambda,0.94
+garch_variants,"GARCH, EGARCH, GJR"
+har_horizon,1
+har_train_window,252
+horizon,1
+hybrid_window,252
+max_forecasts,250
+max_leverage,2.0
+mode,Fast mode
+rv_source,21-day rolling daily returns
+target_vol,0.15
+ticker,SPY
+train_window,504
